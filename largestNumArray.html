@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findLargestNumber(arr) {
+    if (arr.length === 0) {
+        return "Array is empty!";
+    }
+    let largest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+
+    return largest;
+}
+let numbers = [34, 46, 13, 35, 50, 88, 101];
+let largestNumber = findLargestNumber(numbers);
+alert("The largest number in the array is: " + largestNumber);
+
+    </script>
+</body>
+</html>
